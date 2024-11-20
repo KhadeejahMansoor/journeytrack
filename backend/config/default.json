@@ -1,5 +1,6 @@
 {
-    "mongoURI": "mongodb+srv://deejahmansoor@gmail.com:khadeejah@cluster.mongodb.net/journeytrack?retryWrites=true&w=majority",
-    "jwtSecret": "yourJWTSecret"
-  }
+  "mongoURI": "mongodb+srv://deejahmansoor%40gmail.com:khadeejah@cluster0.mongodb.net/journeytrack?retryWrites=true&w=majority",
+  "jwtSecret": "yourJWTSecret"
+}
+
   
