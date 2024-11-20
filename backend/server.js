@@ -14,10 +14,8 @@ connectDB(); // Connect to MongoDB Atlas
 app.use(express.json({ extended: false })); // Parse JSON requests
 
 // Define Routes
-app.use('/api/users', require('./routes/api/users')); // User-related routes
-app.use('/api/auth', require('./routes/api/auth')); // Authentication routes
-app.use('/api/profile', require('./routes/api/profile')); // Profile routes
-app.use('/api/posts', require('./routes/api/posts')); // Post-related routes
+app.use('/api/users', require('./routes/api/patients')); // User-related routes
+app.use('/api/auth', require('./routes/api/injections')); // Authentication routes
 
 
 app.use(express.json());
