@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb+srv://deejahmansoor@gmail.com:khadeejah@cluster.mongodb.net/journeytrack?retryWrites=true&w=majority",
+    "jwtSecret": "yourJWTSecret"
+  }
+  
