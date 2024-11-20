@@ -3,6 +3,9 @@ const connectDB = require('./config/db');
 const path = require('path');
 
 const app = express();
+const cors = require('cors');
+app.use(cors());
+
 
 // Connect Database
 connectDB(); // Connect to MongoDB Atlas
@@ -15,6 +18,10 @@ app.use('/api/users', require('./routes/api/users')); // User-related routes
 app.use('/api/auth', require('./routes/api/auth')); // Authentication routes
 app.use('/api/profile', require('./routes/api/profile')); // Profile routes
 app.use('/api/posts', require('./routes/api/posts')); // Post-related routes
+
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
